@@ -11,7 +11,7 @@ import com.example.binusezyfoody.R;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private Button btnDrink, btnSnack;
+    private Button btnDrink, btnSnack, btnMap, btnTopup, btnFood;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,23 @@ public class HomeActivity extends AppCompatActivity {
                 openSnack();
             }
         });
+
+        btnMap = (Button) findViewById(R.id.mapButton);
+        btnMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMap();
+            }
+        });
+
+    btnTopup = (Button) findViewById(R.id.homeTopUpButton);
+    btnTopup.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            openTopUp();
+        }
+    });
+
     }
 
     public void openDrink() {
@@ -42,6 +59,16 @@ public class HomeActivity extends AppCompatActivity {
 
     public void openSnack() {
         Intent intent = new Intent(this, SnackActivity.class);
+        startActivity(intent);
+    }
+
+    public void openMap() {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
+
+    public void openTopUp() {
+        Intent intent = new Intent(this, TopUpActivity.class);
         startActivity(intent);
     }
 
