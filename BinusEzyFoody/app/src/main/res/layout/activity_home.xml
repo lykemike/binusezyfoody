@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.HomeActivity">
+
+    <ImageView
+        android:id="@+id/imgDrink"
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homedrinks" />
+
+    <Button
+        android:id="@+id/homeDrinkButton"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="Drinks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDrink"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgSnack"
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homesnacks" />
+
+    <Button
+        android:id="@+id/homeSnackButton"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="Snacks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSnack" />
+
+    <ImageView
+        android:id="@+id/imgFood"
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeDrinkButton"
+        app:srcCompat="@drawable/homefood" />
+
+    <Button
+        android:id="@+id/homeFoodButton"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFood" />
+
+    <ImageView
+        android:id="@+id/imgTopUp"
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeSnackButton"
+        app:srcCompat="@drawable/hometopup" />
+
+    <Button
+        android:id="@+id/homeTopUpButton"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="TOP UP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTopUp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
